@@ -20,4 +20,8 @@ if ($operador == "*"){
     $mult = $form1 * $form2;
     echo $mult;
 }
+if ($operador != "+" && $operador != "-" && $operador != "*" && $operador != "/")
+{
+    echo 'Estou com Preguiça!';
+}
 ?>
