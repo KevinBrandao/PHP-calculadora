@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    
+    <style type="text/css">
+        h3{         
+            width:220px;
+            height:30px;
+            background-color:rgb(34, 192, 179);
+            border-radius: 10px;
+            }
+        img{
+            width:300px;
+            height:300px;
+	        position: absolute; 
+            left: 230px; /* posiciona a 90px para a esquerda */ 
+            top: 7px; /* posiciona a 70px para baixo */
+	}
+        </style>
+        
 </head>
 <body>
    
      <center>
-      
+     
+                       <div id="h3"></div>
        <form action = "calculadora.php" method = "POST">
         
        <h3><input name = "form1" type = "number" placeholder = "Digite o Primeiro Número"></h3>  
@@ -24,5 +40,6 @@
     </form>
 </center>
 <img alt="Calculadora do Kevin" src="./img/cal.jpg"  />
+       
 </body>
 </html>
