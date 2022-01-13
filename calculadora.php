@@ -5,6 +5,8 @@ $form2 = $_POST['form2'];
 $operador = $_POST['Operador'];
 
 if ($operador == "+"){
+
+
     $somar = $form1 + $form2;
     echo $somar; 
 }
@@ -14,7 +16,13 @@ if ($operador == "-"){
 }
 if ($operador == "/"){
     $dividir = $form1 / $form2;
-    echo $dividir;
+    if($form2 == 0){
+        echo 'digite um valor valido';
+    }
+    else{
+        echo $dividir;
+    }
+    
 }
 if ($operador == "*"){
     $mult = $form1 * $form2;
